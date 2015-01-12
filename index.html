@@ -65,27 +65,19 @@
   
     <article id="post-pagination-practice" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2015/01/09/pagination-practice/" class="article-date">
-  <time datetime="2015-01-09T09:07:46.000Z" itemprop="datePublished">Jan 9 2015</time>
+    <a href="/2015/01/12/pagination-practice/" class="article-date">
+  <time datetime="2015-01-12T04:22:12.000Z" itemprop="datePublished">Jan 12 2015</time>
 </a>
     
   </div>
   <div class="article-inner">
     
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/01/09/pagination-practice/">分页算法优化实践</a>
-    </h1>
-  
-
-      </header>
-    
     <div class="article-entry" itemprop="articleBody">
       
-        <p>核算数据的查询和涉及大量数据处理的job，对于分页查询的性能非常敏感。</p>
+        <h1 id="分页算法优化实践">分页算法优化实践</h1>
+<hr>
+<p>核算数据的查询和涉及大量数据处理的job，对于分页查询的性能非常敏感。</p>
 <p>正好看到Tim Yang的这篇博客，提供了优化的思路: <a href="http://timyang.net/data/key-list-pagination-ii/" target="_blank" rel="external">http://timyang.net/data/key-list-pagination-ii/</a></p>
 <p>Tim是新浪博客的技术总监，他的博客基本都是干货，推荐大家关注。</p>
 <p>他博客中提到的优化方法，我就不重复了。就以报表数据的查询举个栗子吧。</p>
@@ -219,11 +211,12 @@
 <p>我们写了个查询功能，测了一下，具体代码见:<br><a href="https://github.com/NoahShen/mycodefactory/tree/dev/secondindex" target="_blank" rel="external">https://github.com/NoahShen/mycodefactory/tree/dev/secondindex</a></p>
 <p>优化后，性能比原先提高了80%~100%，测试代码以及索引的生成、管理方式还有优化空间，所以查询性能还有提升的空间</p>
 <p>除了这个报表的例子中使用，对于经常需要翻页查询，批量数据处理的场景都可以参考，比如结算的收入成本作业，商家账单页面的查询</p>
+<p>PS: 使用这种优化方式的前提是数据的排序结构要和B+树类似</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="/2015/01/09/pagination-practice/" data-id="3o82pfnjnwzd6hsu" class="article-share-link">Share</a>
+      <a data-url="/2015/01/12/pagination-practice/" data-id="3o82pfnjnwzd6hsu" class="article-share-link">Share</a>
       
       
     </footer>
@@ -260,7 +253,7 @@
       <ul>
         
           <li>
-            <a href="/2015/01/09/pagination-practice/">分页算法优化实践</a>
+            <a href="/2015/01/12/pagination-practice/">(no title)</a>
           </li>
         
       </ul>
